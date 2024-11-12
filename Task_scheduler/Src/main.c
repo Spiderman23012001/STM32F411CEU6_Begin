@@ -29,6 +29,14 @@ void task2_handler(void);
 void task3_handler(void);
 void task4_handler(void);
 
+// some stack memory calculations
+#define SIZE_TASK_STACK		1024U
+#define SIZE_SCHED_STACK	1024U
+
+#define SRAM_START			0x20000000U
+#define SIZE_SRAM			((128)*(1024))
+
+
 int main(void)
 {
     /* Loop forever */
